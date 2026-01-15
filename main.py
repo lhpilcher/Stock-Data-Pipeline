@@ -39,7 +39,7 @@ avg_close = pd.read_sql_query(query, conn)
 print("Average closing price per stock:")
 print(avg_close)
 
-# Step 5: Optional visualization - Close price trends
+
 plt.figure(figsize=(10,5))
 for ticker in tickers:
     stock_data = df[df['Ticker'] == ticker]
